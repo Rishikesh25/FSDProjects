@@ -1,0 +1,14 @@
+package lockedmepkg;
+
+public class LMmainClass {
+         
+	//Giving the folderpath for input files
+	static final String folderpath = "F:\\Phase1project\\FilesLockedMe";
+	public static void main(String[] args) 
+	
+	{
+	
+
+	}
+
+}

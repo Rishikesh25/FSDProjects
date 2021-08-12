@@ -1,0 +1,18 @@
+package lockedmepkg;
+
+import java.util.List;
+
+public class LMmainClass {
+         
+	//Giving the folderpath for input files
+	static final String folderpath = "F:\\Phase1project\\FilesLockedMe";
+	public static void main(String[] args) 
+	
+	{
+	List<String>FileNames = FileManagerLM.getFiles(folderpath);
+	for(String k :FileNames )
+		System.out.println(k);
+
+	}
+
+}

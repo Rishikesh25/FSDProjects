@@ -1,0 +1,65 @@
+package lockedmepkg;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LMmainClass {
+         
+	//Giving the folderpath for input files
+	static final String folderpath = "F:\\Phase1project\\FilesLockedMe";
+	public static void main(String[] args) 
+	
+	{
+/*	List<String>FileNames = FileManagerLM.getFiles(folderpath);
+	for(String k :FileNames)
+		System.out.println(k); */
+	
+		
+	/*	//Variable Declaration
+		String FileName;
+		int linesCount;
+		List<String>content = new ArrayList<String>();
+	Scanner sc = new Scanner(System.in);
+	
+	//Reading file-names from user
+    System.out.println("Enter the file name:");
+    FileName = sc.nextLine();
+    
+    //Read no. of lines in a file from user
+    System.out.println("Enter number of lines in the file");
+    linesCount = Integer.parseInt(sc.nextLine());
+    
+    //Reading the lines
+    for(int i=1;i<=linesCount;i++)
+    	{System.out.println("Enter line " +i+ ":" );
+    content.add(sc.nextLine());
+    	}
+    //saving the content into the file
+    boolean isSaved = FileManagerLM.addFiles(folderpath, FileName, content);
+    
+    if(isSaved)
+    	System.out.println("File & content saved");
+    else
+    	System.out.println("Error: file not saved. Please contact admin@lockedme.com");
+    
+    sc.close();  */
+    
+    //To delete the file
+    
+	String FileName;
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the  file to be deleted:");
+	FileName = sc.nextLine();
+	
+	boolean isDeleted = FileManagerLM.deleteFile(folderpath, FileName)
+			
+			if(isDeleted)
+		System.out.println("File deleted");
+			else
+				System.out.println("Error occured");
+	
+
+	}
+
+}

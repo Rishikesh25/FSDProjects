@@ -1,0 +1,35 @@
+package lockedmepkg;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class FileManagerLM {
+
+	/**
+	 * This method returns folder that contains all file names 
+	 * @param folderpath
+	 * @return List<String>
+	 */
+	public static List<String>getFiles(String folderpath)
+	{
+		File fl = new File(folderpath);
+		
+		//Getting the files into array-File
+		File[]	fileslist = fl.listFiles();
+		
+		//Get all the files' names in the list
+		List<String> FileNames = new ArrayList<String> ();
+	
+		for (File F : fileslist)
+			FileNames.add(F.getName());
+		return FileNames;
+			
+		
+		
+				
+		
+	}
+	 
+}	
+

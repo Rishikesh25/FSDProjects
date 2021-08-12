@@ -1,0 +1,32 @@
+package lockedmepkg;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class LMmainClass {
+         
+	//Giving the folderpath for input files
+	static final String folderpath = "F:\\Phase1project\\FilesLockedMe";
+	public static void main(String[] args) 
+	
+	{
+/*	List<String>FileNames = FileManagerLM.getFiles(folderpath);
+	for(String k :FileNames)
+		System.out.println(k); */
+	
+		//Variable Declaration
+		String FileName;
+		int linesCount;
+		
+	List<String>content = new ArrayList<String>();
+	Scanner sc = new Scanner(System.in);
+	
+	//Reading filenames from user
+    System.out.println("Enter the file name:");
+    FileName = sc.nextLine();
+	
+
+	}
+
+}
